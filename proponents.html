@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/manifest.json">
+
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/css/vendors/simplebar.css">
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/examples.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/dataTables.bootstrap4.css">
     <script>
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];
@@ -39,17 +40,17 @@
 <body>
     <div class="sidebar sidebar-light sidebar-fixed" id="sidebar">
         <div class="sidebar-brand d-none d-md-flex">
-            <svg class="sidebar-brand-full" width="118" height="46" alt="Logo">
+            <i class="sidebar-brand-full" width="118" height="46" alt="Logo">
             <use xlink:href="assets/brand/coreui.svg#full"></use>
-            </svg>
-            <svg class="sidebar-brand-narrow" width="46" height="46" alt="Logo">
+            </i>
+            <i class="sidebar-brand-narrow" width="46" height="46" alt="Logo">
             <use xlink:href="assets/brand/coreui.svg#signet"></use>
-            </svg>
+            </i>
             <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
         </div>
         <ul class="sidebar-nav" data-coreui="navigation" data-simplebar="">
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="dashboard.html">
                 <i class="mx-2" data-feather="layers"></i>
                 Dashboard
                 </a>
@@ -79,16 +80,10 @@
             <li class="nav-item">
                 <a class="nav-link" href="experts.html">
                 <i class="mx-2" data-feather="user"></i>
-                Expert Firms
+                Experts
                 </a>
             </li>
-            <li class="nav-divider"></li>
-            <li class="nav-item">
-                <a class="nav-link" href="experts.html">
-                <i class="mx-2" data-feather="user"></i>
-                Expert Individuals
-                </a>
-            </li>
+            
             <li class="nav-divider"></li>
             <li class="nav-item">
                 <a class="nav-link" href="proponents.html">
@@ -103,30 +98,10 @@
                 Laboratories
                 </a>
             </li>
+
             <li class="nav-divider"></li>
             <li class="nav-item">
-                <a class="nav-link" href="users.html">
-                <i class="mx-2" data-feather="calendar"></i>
-                Licences
-                </a>
-            </li>
-            <li class="nav-divider"></li>
-            <li class="nav-item">
-                <a class="nav-link" href="users.html">
-                <i class="mx-2" data-feather="calendar"></i>
-                Permits
-                </a>
-            </li>
-            <li class="nav-divider"></li>
-            <li class="nav-item">
-                <a class="nav-link" href="users.html">
-                <i class="mx-2" data-feather="calendar"></i>
-                Clearances
-                </a>
-            </li>
-            <li class="nav-divider"></li>
-            <li class="nav-item">
-                <a class="nav-link" href="users.html">
+                <a class="nav-link" href="calendar.html">
                 <i class="mx-2" data-feather="calendar"></i>
                 Calendar
                 </a>
@@ -144,15 +119,15 @@
         </a>
         </li>
         <li class="nav-item"><a class="nav-link" data-coreui-toggle="tab" href="#settings" role="tab">
-            <svg class="icon">
+            <i class="icon">
             <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-settings"></use>
-            </svg></a>
+            </i></a>
         </li>
     </ul>
     <button class="sidebar-close" type="button" data-coreui-close="sidebar">
-    <svg class="icon">
+    <i class="icon">
     <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-x"></use>
-    </svg>
+    </i>
     </button>
     </div>
 
@@ -169,22 +144,22 @@
     <div class="list-group-item border-start-4 border-start-success">
     <div class="avatar avatar-lg float-end"><img class="avatar-img" src="/img/4.jpg" alt="user@email.com"></div>
     <div>Skype with <strong>Megan</strong></div><small class="text-medium-emphasis me-3">
-    <svg class="icon">
+    <i class="icon">
     <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-calendar"></use>
-    </svg> 4 - 5pm</small><small class="text-medium-emphasis">
-    <svg class="icon">
+    </i> 4 - 5pm</small><small class="text-medium-emphasis">
+    <i class="icon">
     <use xlink:href="vendors/@coreui/icons/svg/brand.svg#cib-skype"></use>
-    </svg> On-line</small>
+    </i> On-line</small>
     </div>
     <div class="list-group-item border-start-4 border-start-secondary bg-light text-center fw-bold text-medium-emphasis text-uppercase small dark:bg-white dark:bg-opacity-10 dark:text-medium-emphasis">Tomorrow</div>
     <div class="list-group-item border-start-4 border-start-danger list-group-item-divider">
     <div>New UI Project - <strong>deadline</strong></div><small class="text-medium-emphasis me-3">
-    <svg class="icon">
+    <i class="icon">
     <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-calendar"></use>
-    </svg> 10 - 11pm</small><small class="text-medium-emphasis">
-    <svg class="icon">
+    </i> 10 - 11pm</small><small class="text-medium-emphasis">
+    <i class="icon">
     <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-home"></use>
-    </svg> Mugisha Vivacious</small>
+    </i> Mugisha Vivacious</small>
     <div class="avatars-stack mt-2">
     <div class="avatar avatar-xs"><img class="avatar-img" src="/img/2.jpg" alt="user@email.com"></div>
     <div class="avatar avatar-xs"><img class="avatar-img" src="/img/3.jpg" alt="user@email.com"></div>
@@ -195,21 +170,21 @@
     </div>
     <div class="list-group-item border-start-4 border-start-success list-group-item-divider">
     <div><strong>#10 Startups.Garden</strong> Meetup</div><small class="text-medium-emphasis me-3">
-    <svg class="icon">
+    <i class="icon">
     <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-calendar"></use>
-    </svg> 1 - 3pm</small><small class="text-medium-emphasis">
-    <svg class="icon">
+    </i> 1 - 3pm</small><small class="text-medium-emphasis">
+    <i class="icon">
     <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-location-pin"></use>
-    </svg> Palo Alto, CA</small>
+    </i> Palo Alto, CA</small>
     </div>
     <div class="list-group-item border-start-4 border-start-success list-group-item-divider">
     <div><strong>Team meeting</strong></div><small class="text-medium-emphasis me-3">
-    <svg class="icon">
+    <i class="icon">
     <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-calendar"></use>
-    </svg> 4 - 6pm</small><small class="text-medium-emphasis">
-    <svg class="icon">
+    </i> 4 - 6pm</small><small class="text-medium-emphasis">
+    <i class="icon">
     <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-home"></use>
-    </svg> Mugisha Vivacious</small>
+    </i> Mugisha Vivacious</small>
     <div class="avatars-stack mt-2">
     <div class="avatar avatar-xs"><img class="avatar-img" src="/img/2.jpg" alt="user@email.com"></div>
     <div class="avatar avatar-xs"><img class="avatar-img" src="/img/3.jpg" alt="user@email.com"></div>
@@ -327,9 +302,9 @@
         <i data-feather="menu"></i>
     </button>
     <a class="header-brand d-md-none text-white" href="#">
-        <svg width="118" height="46" alt="Logo">
+        <i width="118" height="46" alt="Logo">
         <use xlink:href="assets/brand/coreui.svg#full"></use>
-        </svg>
+        </i>
     </a>
     <form class="d-none d-md-flex" role="search">
         <div class="input-group">
@@ -348,47 +323,47 @@
     <div class="dropdown-header bg-light py-2 dark:bg-white dark:bg-opacity-10">
     <div class="fw-semibold">Expert Account</div>
     </div><a class="dropdown-item" href="#">
-    <svg class="icon me-2">
+    <i class="icon me-2">
     <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-bell"></use>
-    </svg>My Licences<span class="badge badge-sm bg-success-gradient ms-2">2</span></a>
+    </i>My Licences<span class="badge badge-sm bg-success-gradient ms-2">2</span></a>
     <a class="dropdown-item" href="#">
-    <svg class="icon me-2">
+    <i class="icon me-2">
     <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-envelope-open"></use>
-    </svg>My Certificates<span class="badge badge-sm badge-sm bg-success ms-2">42</span>
+    </i>My Certificates<span class="badge badge-sm badge-sm bg-success ms-2">42</span>
 </a>
     <a class="dropdown-item" href="#">
-    <svg class="icon me-2">
+    <i class="icon me-2">
     <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-task"></use>
-    </svg> My Proponents<span class="badge badge-sm bg-danger-gradient ms-2">42</span></a>
+    </i> My Proponents<span class="badge badge-sm bg-danger-gradient ms-2">42</span></a>
     <a class="dropdown-item" href="#">
-        <svg class="icon me-2">
+        <i class="icon me-2">
         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-comment-square"></use>
-        </svg> My Submissions<span class="badge badge-sm bg-warning-gradient ms-2">42</span>
+        </i> My Submissions<span class="badge badge-sm bg-warning-gradient ms-2">42</span>
     </a>
     <div class="dropdown-header bg-light py-2 dark:bg-white dark:bg-opacity-10">
     <div class="fw-semibold">User Account</div>
     </div>
     <a class="dropdown-item" href="#">
-        <svg class="icon me-2">
+        <i class="icon me-2">
         <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-user"></use>
-        </svg> 
+        </i> 
         Profile
     </a>
     <a class="dropdown-item" href="#">
-    <svg class="icon me-2">
+    <i class="icon me-2">
     <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-settings"></use>
-    </svg> Settings</a><a class="dropdown-item" href="#">
-    <svg class="icon me-2">
+    </i> Settings</a><a class="dropdown-item" href="#">
+    <i class="icon me-2">
     <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-credit-card"></use>
-    </svg> Payments<span class="badge badge-sm bg-secondary-gradient text-dark ms-2">42</span></a><a class="dropdown-item" href="#">
-    <svg class="icon me-2">
+    </i> Payments<span class="badge badge-sm bg-secondary-gradient text-dark ms-2">42</span></a><a class="dropdown-item" href="#">
+    <i class="icon me-2">
     <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-file"></use>
-    </svg> Projects<span class="badge badge-sm bg-success-gradient ms-2">42</span></a>
+    </i> Projects<span class="badge badge-sm bg-success-gradient ms-2">42</span></a>
     <div class="dropdown-divider"></div>
     <a class="dropdown-item" href="#">
-    <svg class="icon me-2">
+    <i class="icon me-2">
     <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-account-logout"></use>
-    </svg> Logout</a>
+    </i> Logout</a>
     </div>
     </li>
     </ul>
@@ -432,8 +407,8 @@
 <td>Member</td>
 <td><span class="badge bg-success-gradient">Active</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
      <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -445,8 +420,8 @@
     <a class="btn btn-success me-2" href="#">
         <i data-feather="eye"></i>
     </a>
-    <a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -455,8 +430,8 @@
 <td>Member</td>
 <td><span class="badge bg-success-gradient">Active</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -465,8 +440,8 @@
 <td>Member</td>
 <td><span class="badge bg-success-gradient">Active</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -475,8 +450,8 @@
 <td>Staff</td>
 <td><span class="badge bg-danger-gradient">Banned</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -485,8 +460,8 @@
 <td>Staff</td>
 <td><span class="badge bg-danger-gradient">Banned</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -495,8 +470,8 @@
 <td>Member</td>
 <td><span class="badge bg-warning-gradient">Pending</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -505,8 +480,8 @@
 <td>Member</td>
 <td><span class="badge bg-warning-gradient">Pending</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -515,8 +490,8 @@
 <td>Staff</td>
 <td><span class="badge bg-success-gradient">Active</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-     <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+     <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -525,8 +500,8 @@
 <td>Staff</td>
 <td><span class="badge bg-success-gradient">Active</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -535,8 +510,8 @@
 <td>Staff</td>
 <td><span class="badge bg-danger-gradient">Banned</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -545,8 +520,8 @@
 <td>Staff</td>
 <td><span class="badge bg-danger-gradient">Banned</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -556,8 +531,8 @@
 <td><span class="badge bg-dark-gradient">Inactive</span></td>
 <td>
     <a class="btn btn-success me-2" href="#"><i data-feather="eye"></i></a>
-    <a class="btn btn-info me-2" href="#"><i data-feather="file-text"></i></a>
-    <a class="btn btn-danger" href="#"><i data-feather="trash-2"></i></a>
+    <a class="btn btn-primary me-2 text-white" href="#"><i data-feather="file-text"></i></a>
+    <a class="btn btn-danger text-white" href="#"><i data-feather="trash-2"></i></a>
 </td>
 </tr>
 <tr class="align-middle">
@@ -566,8 +541,8 @@
 <td>Admin</td>
 <td><span class="badge bg-dark-gradient">Inactive</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -576,8 +551,8 @@
 <td>Member</td>
 <td><span class="badge bg-warning-gradient">Pending</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -586,8 +561,8 @@
 <td>Member</td>
 <td><span class="badge bg-warning-gradient">Pending</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -597,8 +572,8 @@
 <td><span class="badge bg-warning-gradient">Pending</span></td>
 <td><a class="btn btn-success me-2" href="#">
   <i data-feather="search"></i>
-</a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+</a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -607,8 +582,8 @@
 <td>Member</td>
 <td><span class="badge bg-success-gradient">Active</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -617,8 +592,8 @@
 <td>Staff</td>
 <td><span class="badge bg-danger-gradient">Banned</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -627,8 +602,8 @@
 <td>Admin</td>
 <td><span class="badge bg-dark-gradient">Inactive</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -637,8 +612,8 @@
 <td>Admin</td>
 <td><span class="badge bg-dark-gradient">Inactive</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -647,8 +622,8 @@
 <td>Member</td>
 <td><span class="badge bg-warning-gradient">Pending</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -657,8 +632,8 @@
 <td>Member</td>
 <td><span class="badge bg-warning-gradient">Pending</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -667,8 +642,8 @@
 <td>Staff</td>
 <td><span class="badge bg-success-gradient">Active</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -677,8 +652,8 @@
 <td>Staff</td>
  <td><span class="badge bg-success-gradient">Active</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -687,8 +662,8 @@
 <td>Staff</td>
 <td><span class="badge bg-danger-gradient">Banned</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -697,8 +672,8 @@
 <td>Staff</td>
 <td><span class="badge bg-danger-gradient">Banned</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -707,8 +682,8 @@
 <td>Admin</td>
 <td><span class="badge bg-dark-gradient">Inactive</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -717,8 +692,8 @@
 <td>Member</td>
 <td><span class="badge bg-warning-gradient">Pending</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -727,8 +702,8 @@
 <td>Member</td>
 <td><span class="badge bg-warning-gradient">Pending</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -737,8 +712,8 @@
 <td>Member</td>
 <td><span class="badge bg-warning-gradient">Pending</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
 <tr class="align-middle">
@@ -747,8 +722,8 @@
 <td>Member</td>
 <td><span class="badge bg-warning-gradient">Pending</span></td>
 <td><a class="btn btn-success me-2" href="#">
-    <i data-feather="eye"></i></a><a class="btn btn-info me-2" href="#">
-    <i data-feather="file-text"></i></a><a class="btn btn-danger" href="#">
+    <i data-feather="eye"></i></a><a class="btn btn-primary me-2 text-white" href="#">
+    <i data-feather="file-text"></i></a><a class="btn btn-danger text-white" href="#">
     <i data-feather="trash-2"></i></a></td>
 </tr>
  </tbody>
