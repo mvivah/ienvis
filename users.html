@@ -78,9 +78,9 @@
             </li>
             <li class="nav-divider"></li>
             <li class="nav-item">
-                <a class="nav-link" href="proponents.html">
+                <a class="nav-link" href="applications.html">
                 <i class="mx-2" data-feather="user"></i>
-                Proponents
+                Applications
                 </a>
             </li>
             <li class="nav-divider"></li>
@@ -92,7 +92,7 @@
             </li>
             <li class="nav-divider"></li>
             <li class="nav-item">
-                <a class="nav-link" href="users.html">
+                <a class="nav-link" href="calendar.html">
                 <i class="mx-2" data-feather="calendar"></i>
                 Calendar
                 </a>
@@ -303,7 +303,7 @@
         <i data-feather="mail"></i>My Certificates<span class="badge badge-sm badge-sm bg-success ms-2">42</span>
 </a>
     <a class="dropdown-item" href="#">
-        <i data-feather="check"></i>My Proponents<span class="badge badge-sm bg-danger-gradient ms-2">42</span></a>
+        <i data-feather="check"></i>My Applications<span class="badge badge-sm bg-danger-gradient ms-2">42</span></a>
     <a class="dropdown-item" href="#">
         <i data-feather="message-square"></i> My Submissions<span class="badge badge-sm bg-warning-gradient ms-2">42</span>
     </a>
@@ -345,6 +345,14 @@
 </div>
 <div class="card-body">
 <div class="example">
+    <div class="row">
+        <div class="col-auto ms-auto">
+            <button class="btn btn-secondary" data-coreui-toggle="modal" data-coreui-target="#userModal" role="button">
+                <i data-feather="user-plus"></i> 
+                Add new user
+            </button>
+        </div>
+    </div>
 <div class="tab-content rounded-bottom">
 <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-429">
 <table class="table table-striped border datatable">
@@ -372,7 +380,9 @@
 <td>Alphonse Ivo</td>
 <td>2012/01/01</td>
 <td>Member</td>
-<td><span class="badge bg-success-gradient">Active</span></td>
+<td>
+    <span class="badge bg-success-gradient">Active</span>
+</td>
 <td>
     <a class="btn btn-success me-2" href="#">
         <i data-feather="eye"></i>
